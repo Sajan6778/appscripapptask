@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/user_provider.dart';
-import '../models/user.dart';
-import '../widgets/user_tile.dart';
+import 'package:user_list_app/providers/user_provider.dart';
+import 'package:user_list_app/models/user.dart';
+import 'package:user_list_app/widgets/user_tile.dart';
 
 class UserListScreen extends StatefulWidget {
   @override

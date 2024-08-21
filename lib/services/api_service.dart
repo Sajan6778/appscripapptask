@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/user.dart';
+import 'package:user_list_app/models/user.dart';
 
 class ApiService {
   static const String apiUrl = 'https://jsonplaceholder.typicode.com/users';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import '../models/user.dart';
+import 'package:user_list_app/models/user.dart';
 
 class UserProvider with ChangeNotifier {
   List<User> _users = [];
@@ -17,8 +17,8 @@ class UserProvider with ChangeNotifier {
     notifyListeners();
 
     try {
-      final response =
-          await http.get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
+      final response = await http
+          .get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
 
       if (response.statusCode == 200) {
         List<dynamic> data = json.decode(response.body);
