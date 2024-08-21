@@ -26,7 +26,6 @@ class UserDetailScreen extends StatelessWidget {
               'Email: ${user.email}',
               style: TextStyle(fontSize: 18),
             ),
-            // You can add more details here, like address, phone, etc.
           ],
         ),
       ),
